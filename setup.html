@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Planner Setup • My Pink Planner</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header>
+  <div class="nav-wrap">
+    <a class="brand" href="index.html">
+      <span class="brand-badge">♡</span>
+      <span>My Pink Planner<small>setup form</small></span>
+    </a>
+
+    <nav aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="weekly.html">Weekly</a>
+      <a href="todo.html">To-Do Table</a>
+      <a href="affirmations.html">I Am</a>
+      <a href="setup.html" aria-current="page">Setup</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main" class="container">
+  <section class="hero">
+    <h1>Planner Setup</h1>
+    <p>This page includes an accessible form + JavaScript validation and a summary message.</p>
+  </section>
+
+  <form id="plannerForm" novalidate>
+    <div class="field">
+      <label for="name">Name</label>
+      <input id="name" name="name" type="text" autocomplete="name" />
+      <div class="help">Example: Sarah</div>
+    </div>
+
+    <div class="field">
+      <label for="intention">Weekly intention</label>
+      <input id="intention" name="intention" type="text" />
+      <div class="help">Example: “Finish my assignments early.”</div>
+    </div>
+
+    <div class="field">
+      <label for="favAff">Favorite affirmation</label>
+      <input id="favAff" name="favAff" type="text" />
+      <div class="help">Example: “I am disciplined and consistent.”</div>
+    </div>
+
+    <p id="formErrors" class="error" aria-live="polite"></p>
+
+    <button class="btn primary" type="submit">Save my setup ✨</button>
+
+    <div id="formOutput"></div>
+  </form>
+
+  <footer>
+    Note: This is front-end only (no data is saved on a server).
+  </footer>
+</main>
+
+<script src="js/main.js"></script>
+</body>
+</html>
