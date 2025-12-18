@@ -149,3 +149,10 @@ input {
     gap: 6px;
   }
 }
+.page-img {
+  width: 100%;
+  max-width: 520px;
+  display: block;
+  margin: 24px auto;
+  border-radius: 18px;
+}
